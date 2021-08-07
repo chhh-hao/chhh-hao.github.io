@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://chhh-hao.github.io</id>
+    <id>http://localhost:4000</id>
     <title>hhao&apos;s blog</title>
-    <updated>2021-07-31T14:49:24.029Z</updated>
+    <updated>2021-08-07T14:45:52.508Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://chhh-hao.github.io"/>
-    <link rel="self" href="https://chhh-hao.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>🐾</subtitle>
-    <logo>https://chhh-hao.github.io/images/avatar.png</logo>
-    <icon>https://chhh-hao.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, hhao&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[金字塔原理]]></title>
-        <id>https://chhh-hao.github.io/post/JinZiTaYuanLi/</id>
-        <link href="https://chhh-hao.github.io/post/JinZiTaYuanLi/">
+        <id>http://localhost:4000/post/JinZiTaYuanLi/</id>
+        <link href="http://localhost:4000/post/JinZiTaYuanLi/">
         </link>
         <updated>2021-07-17T12:23:13.000Z</updated>
         <summary type="html"><![CDATA[<p>金字塔原理读书笔记</p>
@@ -23,8 +23,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Java]]></title>
-        <id>https://chhh-hao.github.io/post/java/</id>
-        <link href="https://chhh-hao.github.io/post/java/">
+        <id>http://localhost:4000/post/java/</id>
+        <link href="http://localhost:4000/post/java/">
         </link>
         <updated>2021-07-10T15:02:59.000Z</updated>
         <summary type="html"><![CDATA[<p>java xmind</p>
@@ -34,8 +34,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[微机原理]]></title>
-        <id>https://chhh-hao.github.io/post/wei-ji-yuan-li/</id>
-        <link href="https://chhh-hao.github.io/post/wei-ji-yuan-li/">
+        <id>http://localhost:4000/post/wei-ji-yuan-li/</id>
+        <link href="http://localhost:4000/post/wei-ji-yuan-li/">
         </link>
         <updated>2021-06-29T12:47:05.000Z</updated>
         <summary type="html"><![CDATA[<p>微机原理xmind</p>
@@ -45,8 +45,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Accessibility Service]]></title>
-        <id>https://chhh-hao.github.io/post/accessibility-service/</id>
-        <link href="https://chhh-hao.github.io/post/accessibility-service/">
+        <id>http://localhost:4000/post/accessibility-service/</id>
+        <link href="http://localhost:4000/post/accessibility-service/">
         </link>
         <updated>2021-06-19T14:51:21.000Z</updated>
         <summary type="html"><![CDATA[<p>创建自己的Accessibility Service</p>
@@ -56,8 +56,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[舆论学：舆论导向研究]]></title>
-        <id>https://chhh-hao.github.io/post/yu-lun-xue-yu-lun-dao-xiang-yan-jiu/</id>
-        <link href="https://chhh-hao.github.io/post/yu-lun-xue-yu-lun-dao-xiang-yan-jiu/">
+        <id>http://localhost:4000/post/yu-lun-xue-yu-lun-dao-xiang-yan-jiu/</id>
+        <link href="http://localhost:4000/post/yu-lun-xue-yu-lun-dao-xiang-yan-jiu/">
         </link>
         <updated>2021-06-19T06:00:03.000Z</updated>
     </entry>
