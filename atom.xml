@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:4000</id>
     <title>hhao&apos;s blog</title>
-    <updated>2021-08-29T06:53:37.734Z</updated>
+    <updated>2021-09-04T15:40:33.232Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:4000"/>
     <link rel="self" href="http://localhost:4000/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>http://localhost:4000/images/avatar.png</logo>
     <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, hhao&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[计算机组成原理]]></title>
+        <id>http://localhost:4000/post/ji-suan-ji-zu-cheng-yuan-li/</id>
+        <link href="http://localhost:4000/post/ji-suan-ji-zu-cheng-yuan-li/">
+        </link>
+        <updated>2021-09-04T15:18:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>《计算机组成原理》读书笔记</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>《计算机组成原理》读书笔记</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[金字塔原理]]></title>
         <id>http://localhost:4000/post/JinZiTaYuanLi/</id>
