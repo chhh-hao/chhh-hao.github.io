@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>计算机组成原理 - hhao&#39;s blog</title>
-<link rel="shortcut icon" href="https://chhh-hao.github.io/favicon.ico">
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://chhh-hao.github.io/media/css/tailwind.css">
-<link rel="stylesheet" href="https://chhh-hao.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="计算机组成原理 - hhao&#39;s blog - Atom Feed" href="https://chhh-hao.github.io/atom.xml">
+<link rel="stylesheet" href="http://localhost:4000/media/css/tailwind.css">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="计算机组成原理 - hhao&#39;s blog - Atom Feed" href="http://localhost:4000/atom.xml">
 
     
 
@@ -36,8 +36,8 @@
 处理器、微处理器
 1..." />
   <meta property="og:type" content="articles">
-  <meta property="og:url" content="https://chhh-hao.github.io/post/JSJZCYL/" />
-  <meta property="og:image" content="https://chhh-hao.github.io/images/avatar.png">
+  <meta property="og:url" content="http://localhost:4000/post/JSJZCYL/" />
+  <meta property="og:image" content="http://localhost:4000/images/avatar.png">
   <meta property="og:image:height" content="630">
   <meta property="og:image:width" content="1200">
   <meta name="twitter:title" content="计算机组成原理 - hhao&#39;s blog">
@@ -52,13 +52,13 @@
 处理器、微处理器
 1...">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://chhh-hao.github.io/post/JSJZCYL/">
+  <link rel="canonical" href="http://localhost:4000/post/JSJZCYL/">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
  
   
-    <link rel="stylesheet" href="https://chhh-hao.github.io/media/css/prism-atom-dark.css">
+    <link rel="stylesheet" href="http://localhost:4000/media/css/prism-atom-dark.css">
   
 
   
@@ -66,7 +66,7 @@
 
 <body>
   <div class="antialiased flex flex-col min-h-screen" id="app">
-    <a href="https://chhh-hao.github.io" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
+    <a href="http://localhost:4000" class="fixed top-0 left-0 mt-4 bg-black text-white dark:text-gray-700 dark:bg-yellow-50 dark:hover:bg-black dark:hover:text-white inline-flex p-2 pl-8 hover:text-gray-700 hover:bg-yellow-50 font-bold z-10 transition-fast animated fadeInLeft">
       hhao&#39;s blog
     </a>
     <div class="max-w-4xl w-full mx-auto">
@@ -76,7 +76,7 @@
         </h1>
         
         <div class="mb-8 flex flex-wrap">
-          <div class="text-gray-400 text-sm mr-4">2021-09-04 · 9 min read</div>
+          <div class="text-gray-400 text-sm mr-4">2021-09-04 · 11 min read</div>
           
         </div>
         <div class="markdown mb-8" v-pre>
@@ -246,6 +246,41 @@ END
 </li>
 </ol>
 <p>&lt; ----------- 2021/10/3 ----------- &gt;</p>
+<h3 id="计算机系统概述">计算机系统概述</h3>
+<p><strong>存储层次</strong></p>
+<pre><code>CPU和存储器性能之间的差距不断加大，设计者们试图通过在使用数据之前将它们从存储器中取出，来消除相对慢速的存储器的影响，以隐藏**等待时间**（延迟）。
+</code></pre>
+<p><strong>经典存储层次</strong>：</p>
+<pre><code>![](http://localhost:4000/post-images/1633851263275.png)
+
+- 存储器：存放处理器的工作数据
+- Cache：缓存常用数据的快速存储器
+- DRAM：存放工作数据块
+- 硬盘：保存程序和数据
+- 硬盘的容量是寄存器的4000万倍，但其速度却比寄存器慢2000万倍。
+</code></pre>
+<p><strong>Cache</strong></p>
+<pre><code>Cache的访问时间比主存短得多，它对计算机的总体性能影响与处理器体系结构的影响相同。Cache保存着主存中常用的数据的副本，便于使用。Cache系统与计算机的地址总线和数据总线相连，监听着CPU与存储器之间的事务。
+
+**存放正在执行的程序的主存**
+
+    由动态随机访问存储器的易失性半导体存储器构成的立即存取存储器。这种存储器掉电时其中的数据都会丢失，不能用它长时间地保存程序。
+</code></pre>
+<p><strong>总线</strong></p>
+<pre><code>总线将计算机的两个或多个功能单元连接在一起并允许它们相互交换数据，还将计算机与外设连接在一起。
+
+- 如果通过**公共总线**将所有单元连接在一起，那么每次都只有唯一一个设备能够与其他设备通信。如果由两个设备同时请求使用总线，它们就不得不去竞争总线的控制权，即为**仲裁**的过程。一些系统使用**仲裁器**来决定哪个设备继续工作
+- 总线术语
+    - **宽度**：一般用并行数据通路的数量来定义总线宽度。如一条64位宽的总线一次能够传送64位信息。
+    - **带宽**：总线带宽时衡量信息在总线上的传输速率的指标。在保证传输率不变的情况下增加总线宽度，可以提高带宽。
+    - **延迟**：从发出数据传输请求到实际数据传输的时间间隔。总线延迟通常包括传输开始之前进行总线仲裁的时间。
+- 现代计算机 — 多条总线，包括片内总线、功能单元间的总线，以及总线间的总线。
+
+    多总线允许并发操作，各条总线可以具有完全不同的特点和操作速度。
+</code></pre>
+<p><strong>标准和协议</strong></p>
+<pre><code>- 标准：约定好的设计系统、定义系统或对其他任何方面进行分类的方式
+- 协议：与标准类似，但覆盖范围较窄。协议决定了双方通信时各事件的发生顺序。</code></pre>
 
         </div>
         <!-- Share to Twitter, Weibo, Telegram -->
@@ -301,6 +336,7 @@ END
 <li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8F%91%E5%B1%95">计算机发展</a></li>
 <li><a href="#%E5%AD%98%E5%82%A8%E7%A8%8B%E5%BA%8F%E8%AE%A1%E7%AE%97%E6%9C%BA">存储程序计算机</a></li>
 <li><a href="#%E5%AD%98%E5%82%A8%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%A6%82%E5%BF%B5">存储程序的概念</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0">计算机系统概述</a></li>
 </ul>
 </li>
 </ul>
@@ -372,11 +408,11 @@ END
 </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://chhh-hao.github.io/media/scripts/main.js"></script>
+  <script src="http://localhost:4000/media/scripts/main.js"></script>
   
   <!-- Code Highlight -->
   
-    <script src="https://chhh-hao.github.io/media/prism.js"></script>
+    <script src="http://localhost:4000/media/prism.js"></script>
     <script>
       Prism.highlightAll()
     </script>
